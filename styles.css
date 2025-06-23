@@ -16,6 +16,7 @@ body {
   left: 0;
   top: 0;
   border-right: 1px solid #333;
+  z-index: 1000;
 }
 
 .border-glow {
@@ -25,7 +26,6 @@ body {
 
 .neon-text {
   color: #0ff;
-  /* text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; */
 }
 
 .nav-link {
@@ -44,6 +44,29 @@ body {
   margin-left: 300px;
   padding: 50px;
   width: calc(100% - 300px);
+}
+
+/* Mobile Overrides */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+  }
+
+  .show-sidebar {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 70px 20px;
+  }
+
+  #toggleSidebar {
+    z-index: 2000;
+  }
 }
 
 .section-title {
