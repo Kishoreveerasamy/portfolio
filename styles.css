@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #eee;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background: #111;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #333;
+}
+
+.border-glow {
+  border: 3px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+}
+
+.neon-text {
+  color: #0ff;
+  /* text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; */
+}
+
+.nav-link {
+  color: #aaa;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0ff;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 300px;
+  padding: 50px;
+  width: calc(100% - 300px);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0ff;
+  display: inline-block;
+  color: #0ff;
+  font-weight: 700;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #0ff2;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background: rgba(0, 255, 255, 0.08);
+  transform: scale(1.03);
+}
